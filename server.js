@@ -15,6 +15,9 @@ app.get('/', function (request, response) {
     response.render('pages/Homepage');
 });
 
+app.get('/Homepage', function (request, response) {
+    response.render('pages/Homepage');
+});
 
 
 
