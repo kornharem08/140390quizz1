@@ -1,0 +1,25 @@
+ <% include ../partials/header %>
+ <table class = "table">
+    <thead>
+        <tr>
+        <td>Code</td>
+        <td>Title</td>
+        <td>credits</td>
+        <td>sections</td>
+        </tr>
+</thead>
+    <tbody>
+    <% subjects.forEach(function(subject){ %>
+        <tr>
+            <td scope ="rows"><%= subject.code %></td>
+            <td><%= subject.title %></td>
+            <td><%= subject.credits %></td>
+            <td><%= subject.sections %></td>
+    </tr>
+    <% }); %>
+    </tbody>
+    </table>
+ 
+ 
+ 
+ <% include ../partials/footer %>
